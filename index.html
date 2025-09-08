@@ -3,129 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Grid with Header & Footer</title>
+  <title>Flex work</title>
   <style>
-    body {
-      margin: 0;
-      display: grid;
-      grid-template-rows: auto 1fr auto;
-      height: 100vh;
-      font-family: Arial, sans-serif;
+    #container-box {
+      display: flex;
+      width: 320px;
+      height: 200px;
     }
 
-    header {
-      background: #333;
-      color: white;
-      text-align: center;
-      padding: 10px;
-      font-size: 20px;
-    }
-
-    footer {
-      background: #333;
-      color: white;
-      text-align: center;
-      padding: 10px;
-      font-size: 16px;
-    }
-
-    #container_box {
-      display: grid;
-      grid-template-rows: repeat(2, 1fr);
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2px;
-      border: 2px solid black;
-      margin: 10px;
-    }
-
-    .box {
-      border: 1px solid black;
-      background-size: cover;
-      background-position: center;
-    }
-
-    .grid-box {
-      display: grid;
-      grid-template-rows: repeat(2, 1fr);
-      grid-template-columns: repeat(2, 1fr);
-      border: 2px solid black;
-      gap: 2px;
-    }
-
-    .part {
-      border: 1px solid gray;
-      background-size: cover;
-      background-position: center;
-    }
-
-    .box:nth-child(1) .part:nth-child(1) { background-image: url("https://picsum.photos/id/1015/400/250"); }
-    .box:nth-child(1) .part:nth-child(2) { background-image: url("https://picsum.photos/id/1016/400/250"); }
-    .box:nth-child(1) .part:nth-child(3) { background-image: url("https://picsum.photos/id/1018/400/250"); }
-    .box:nth-child(1) .part:nth-child(4) { background-image: url("https://picsum.photos/id/1020/400/250"); }
-
-
-    .box:nth-child(2) .part:nth-child(1) { background-image: url("https://picsum.photos/id/1024/400/250"); }
-    .box:nth-child(2) .part:nth-child(2) { background-image: url("https://picsum.photos/id/1015/400/250"); }
-    .box:nth-child(2) .part:nth-child(3) { background-image: url("https://picsum.photos/id/1015/400/250"); }
-    .box:nth-child(2) .part:nth-child(4) { background-image: url("https://picsum.photos/id/1031/400/250"); }
-
-   
-    .box:nth-child(3) .part:nth-child(1) { background-image: url("https://picsum.photos/id/1033/400/250"); }
-    .box:nth-child(3) .part:nth-child(2) { background-image: url("https://picsum.photos/id/1035/400/250"); }
-    .box:nth-child(3) .part:nth-child(3) { background-image: url("https://picsum.photos/id/1039/400/250"); }
-    .box:nth-child(3) .part:nth-child(4) { background-image: url("https://picsum.photos/id/1040/400/250"); }
-
-    .box:nth-child(4) { background-image: url("https://picsum.photos/id/1043/800/400"); }
-
-    .box:nth-child(5) .part:nth-child(1) { background-image: url("https://picsum.photos/id/1045/400/250"); }
-    .box:nth-child(5) .part:nth-child(2) { background-image: url("https://picsum.photos/id/1047/400/250"); }
-    .box:nth-child(5) .part:nth-child(3) { background-image: url("https://picsum.photos/id/1050/400/250"); }
-    .box:nth-child(5) .part:nth-child(4) { background-image: url("https://picsum.photos/id/1052/400/250"); }
-
+    .box1,.box3 {
+        width:80px;
+        height:200px;
+        background-color: rgb(145, 145, 235);
     
-    .box:nth-child(6) { background-image: url("https://picsum.photos/id/1015/400/250"); }
+    }
+     .box2,.box4 {
+        width:80px;
+        height:200px;
+         background-color: rgb(232, 232, 238);
+    
+    }
+
+
+    .box1 {
+      background-image: url("download (8).jpg");
+    }
+    .box2 {
+      background-image: url("download (9).jpg");
+    }
+    .box3 {
+      background-image: url("download (10).jpg");
+    }
+    .box4 {
+      background-image: url("I love sunsets and sea💌.jpg");
+    }
   </style>
 </head>
 <body>
-  <header>
-    Header
-  </header>
-
-  <div id="container_box">
-    <div class="box grid-box">
-      <div class="part"></div>
-      <div class="part"></div>
-      <div class="part"></div>
-      <div class="part"></div>
-    </div>
-    <div class="box grid-box">
-      <div class="part"></div>
-      <div class="part"></div>
-      <div class="part"></div>
-      <div class="part"></div>
-    </div>
-    <div class="box grid-box">
-      <div class="part"></div>
-      <div class="part"></div>
-      <div class="part"></div>
-      <div class="part"></div>
-    </div>
-    <div class="box"></div>
-    <div class="box grid-box">
-      <div class="part"></div>
-      <div class="part"></div>
-      <div class="part"></div>
-      <div class="part"></div>
-    </div>
-    <div class="box"></div>
+  <div id="container-box">
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
   </div>
-
-  <footer>
-    Gargi Arya  8368269194
-  </footer>
 </body>
 </html>
-
-
-
-
